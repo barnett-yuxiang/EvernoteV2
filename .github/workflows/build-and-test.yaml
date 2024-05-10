@@ -1,0 +1,33 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      
+    - name: Print environment information
+      run: |
+        echo "Running on GitHub Actions!"
+        echo "Job started on $(date)"
+        
+    - name: List directory contents
+      run: ls -alh
+
+    - name: Print a custom message
+      run: echo "Hello from GitHub Actions!"
+
+    - name: Generate a random number
+      id: random_number
+      run: echo "::set-output name=number::$(($RANDOM % 100))"
+    
+    - name: Use the random number
+      run: echo "The random number is ${{ steps.random_number.outputs.number }}"
