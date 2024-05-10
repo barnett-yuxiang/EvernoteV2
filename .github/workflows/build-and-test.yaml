@@ -30,4 +30,6 @@ jobs:
       run: echo "RAND_NUMBER=$(($RANDOM % 100))" >> $GITHUB_OUTPUT
     
     - name: Use the random number
+      env:
+        RAND_NUMBER: ${{ steps.random_number.outputs.RAND_NUMBER }}
       run: echo "The random number is $RAND_NUMBER"
