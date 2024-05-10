@@ -27,7 +27,7 @@ jobs:
 
     - name: Generate a random number
       id: random_number
-      run: echo "::set-output name=number::$(($RANDOM % 100))"
+      run: echo "RAND_NUMBER=$(($RANDOM % 100))" >> $GITHUB_OUTPUT
     
     - name: Use the random number
-      run: echo "The random number is ${{ steps.random_number.outputs.number }}"
+      run: echo "The random number is $RAND_NUMBER"
