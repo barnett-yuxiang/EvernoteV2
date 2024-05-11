@@ -35,4 +35,4 @@ jobs:
       run: echo "The random number is $RAND_NUMBER"
     
     - name: Test secret
-      run: echo "The secret is ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}"
+      run: echo "The secret is ${{ secrets.SECRET_NAME }}"
