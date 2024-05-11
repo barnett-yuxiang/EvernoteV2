@@ -33,3 +33,6 @@ jobs:
       env:
         RAND_NUMBER: ${{ steps.random_number.outputs.RAND_NUMBER }}
       run: echo "The random number is $RAND_NUMBER"
+    
+    - name: Test secret
+      run: echo "The secret is ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}"
