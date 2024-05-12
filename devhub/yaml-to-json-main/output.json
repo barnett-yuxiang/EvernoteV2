@@ -1,0 +1,27 @@
+{
+  "123": 456,
+  "key": "value",
+  "key with quotes": "value with quotes",
+  "single quotes": "a value 'in' single quotes",
+  "double quotes": "☺ ☻",
+  "array": [
+    1,
+    "hello",
+    "world"
+  ],
+  "boolean": true,
+  "null": null,
+  "object(map)": {
+    "key": "value",
+    "another": "value",
+    "nesed object": {
+      "nested key": "values"
+    }
+  },
+  "json object": [
+    "run-1",
+    "run-2",
+    "run-3 run-4",
+    "run-5 | - run-6 - run-7"
+  ]
+}
