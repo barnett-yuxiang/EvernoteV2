@@ -8,7 +8,7 @@ jobs:
       - name: List Files Before
         run: ls -a
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3 #
       - name: List Files After
         run: ls -a
   checkout-and-display-files:
