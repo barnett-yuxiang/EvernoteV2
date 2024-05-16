@@ -22,7 +22,16 @@ zsh theme
 
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
 
-other useful terminal tools: `brew install eza bat procs gh`
+other useful terminal tools: `brew install gh eza bat procs ripgrep`
+
+
+- gh
+
+
+- eza
+- bat
+- procs
+- ripgrep, https://github.com/BurntSushi/ripgrep
 
 # Linux
 
