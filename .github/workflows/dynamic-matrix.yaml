@@ -18,7 +18,7 @@ jobs:
       - uses: actions/github-script@v6
         id: matrix-array
         with:
-          script: "return {os: context.payload.inputs.os.split(', '), node-version: context.payload.inputs.node-version.split(', ')}"
+          script: "return {os: context.payload.inputs['os'].split(', '), 'node-version': context.payload.inputs['node-version'].split(', ') }"
           result-encoding: json
       - run: echo ${{ steps.matrix-array.outputs.result }}
       - run: echo "step-out=value" >> $GITHUB_OUTPUT
