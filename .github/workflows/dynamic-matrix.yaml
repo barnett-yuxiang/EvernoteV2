@@ -15,7 +15,7 @@ jobs:
   prepare-matrix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/javascript-action@v6
+      - uses: actions/github-script@v6
         id: matrix-array
         with:
           script: "return {os: context.payload.inputs.os.split(', '), node-version: context.payload.inputs.node-version.split(', ')}"
