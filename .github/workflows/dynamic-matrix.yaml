@@ -3,24 +3,26 @@ on:
   workflow_dispatch:
     inputs:
       os:
-        description: 'Operating System'
+        description: "Operating System"
         default: "ubuntu-latest, windows-latest"
         type: string
       node-version:
-        description: 'Node Version'
+        description: "Node Version"
         default: "14, 15, 16"
         type: string
 
 jobs:
   prepare-matrix:
     runs-on: ubuntu-latest
+    outputs:
+      matrix-arrays: ${{ steps.matrix-arrays.outputs.result }}
     steps:
       - uses: actions/github-script@v6
-        id: matrix-array
+        id: matrix-arrays
         with:
           script: "return {os: context.payload.inputs['os'].split(', '), 'node-version': context.payload.inputs['node-version'].split(', ') }"
           result-encoding: json
-      - run: echo ${{ steps.matrix-array.outputs.result }}
+      - run: echo ${{ steps.matrix-arrays.outputs.result }}
       - run: echo "step-out=value" >> $GITHUB_OUTPUT
         id: step-1
       - run: echo "step-out=value 2" >> $GITHUB_OUTPUT
@@ -29,10 +31,11 @@ jobs:
           echo '${{ steps.step-1.outputs.step-out }}'
           echo '${{ steps.step-2.outputs.step-out }}'
   node-matrix:
+    needs: prepare-matrix
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        node-version: [14, 15, 16]
+        os: ${{ fromJson(needs.prepare-matrix.outputs.matrix-arrays).os }}
+        node-version: ${{ fromJson(needs.prepare-matrix.outputs.matrix-arrays).node-version }}
     runs-on: ${{ matrix.os }}
     steps:
       - run: node -v
