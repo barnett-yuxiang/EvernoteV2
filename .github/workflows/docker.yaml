@@ -1,3 +1,4 @@
+
 name: Docker
 on: [workflow_dispatch]
 
@@ -46,4 +47,11 @@ jobs:
         uses: docker://node:18.16-alpine3.17
         with:
           entrypoint: ./script.sh
-          args: "arg1 arg2"
+          args: "Some string"
+      - name: Send a slack message
+        uses: docker://technosophos/slack-notify
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_TITLE: From Github Actions
+          SLACK_MESSAGE: "Actor: ${{github.actor}}, Event: ${{github.event_name}}"
+          SLACK_COLOR: "#723fc4"
