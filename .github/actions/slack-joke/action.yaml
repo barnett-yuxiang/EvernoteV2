@@ -26,7 +26,7 @@ runs:
         echo "$EOF" >> "$GITHUB_OUTPUT"
     - name: Generate Joke File
       shell: bash
-      run: echo '${{ steps.joke.outputs.random_joke }}' > joke.txt
+      run: echo "${{ steps.joke.outputs.random_joke }}" > joke.txt
       if: inputs.upload_joke
     - name: Upload the Joke
       if: inputs.upload_joke
