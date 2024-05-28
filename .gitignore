@@ -1,10 +1,26 @@
+# General
 .DS_Store
 
-.vscode
+# Editor directories
+.vscode/
+.idea/
 
-node_modules
+# Node.js modules
+node_modules/
 
-coverage
-vendor
+# Python virtual environments
+venv/
 
-venv
+# Coverage reports
+coverage/
+
+# Vendor folder
+vendor/
+
+# Compiled Python files
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Windows thumbnail cache
+Thumbs.db
