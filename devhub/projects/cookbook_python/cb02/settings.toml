@@ -1,0 +1,10 @@
+[default]
+app_name = "Awesome App"
+debug = true
+
+[development]
+database_url = "sqlite:///dev.db"
+
+[production]
+database_url = "sqlite:///prod.db"
+debug = false
