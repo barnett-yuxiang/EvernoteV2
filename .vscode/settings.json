@@ -1,0 +1,6 @@
+{
+  "python.pythonPath": "${workspaceFolder}/devhub/projects/cookbook_python/venv/bin/python",
+  "python.autoComplete.extraPaths": [
+    "${workspaceFolder}/devhub/projects/cookbook_python/venv/lib/python3.10/site-packages"
+  ]
+}

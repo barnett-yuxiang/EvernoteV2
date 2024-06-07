@@ -2,7 +2,7 @@
 .DS_Store
 
 # Editor directories
-.vscode/
+# .vscode/
 .idea/
 
 # Node.js modules
