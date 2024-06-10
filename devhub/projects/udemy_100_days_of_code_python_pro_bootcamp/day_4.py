@@ -10,7 +10,8 @@ states_of_america = [
   "Oklahoma", "New Mexico", "Arizona", "Alaska", "Hawaii"
 ]
 
-print(states_of_america)
+print(states_of_america[1])
+print(states_of_america[-2])
 
 
 dirty_dozen = [
