@@ -1,3 +1,4 @@
+#
 
 fruits = ["Apple", "Peach", "Pear"]
 
@@ -18,3 +19,32 @@ dirty_dozen = [
   "Strawberries", "Spinach", "Kale", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears", "Tomatoes",
   "Celery", "Potatoes"
 ]
+
+#
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
