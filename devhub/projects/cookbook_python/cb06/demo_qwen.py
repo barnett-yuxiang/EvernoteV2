@@ -4,7 +4,7 @@ import dashscope
 
 def call_with_messages():
     messages = [{'role': 'system', 'content': 'You are a helpful assistant.'},
-                {'role': 'user', 'content': '请介绍一下通义千问，以及当前使用的模型主要指标，例如 Context 长度，型号等等？'}]
+                {'role': 'user', 'content': 'Please introduce Tongyi Qianwen and the main indicators of the current model, such as Context length, model, etc.?'}]
 
     response = dashscope.Generation.call(
         dashscope.Generation.Models.qwen_max,
