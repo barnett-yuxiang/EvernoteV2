@@ -27,3 +27,7 @@ console.log(index);
 
 const edditHobbies = hobbies.map((item) => item + "!");
 console.log(edditHobbies);
+
+const anotherEdditHobbies = hobbies.map((item) => ({text: item}));
+console.log(anotherEdditHobbies);
+
