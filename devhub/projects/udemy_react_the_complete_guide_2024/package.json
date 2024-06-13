@@ -1,0 +1,11 @@
+{
+  "name": "udemy_react_the_complete_guide_2024",
+  "version": "1.0.1",
+  "description": "my udemy course: React - The Complete Guide 2024 (incl. Next.js, Redux)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
