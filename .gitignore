@@ -24,3 +24,6 @@ __pycache__/
 
 # Windows thumbnail cache
 Thumbs.db
+
+# dotenv files
+.env
