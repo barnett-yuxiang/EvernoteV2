@@ -20,4 +20,10 @@ console.log(hobbies)
 hobbies.push('Programming');
 console.log(hobbies);
 
+const index = hobbies.findIndex((item) => {
+  return item === 'Cooking';
+});
+console.log(index);
 
+const edditHobbies = hobbies.map((item) => item + "!");
+console.log(edditHobbies);
