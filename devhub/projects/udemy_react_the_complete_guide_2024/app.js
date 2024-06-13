@@ -31,3 +31,13 @@ console.log(edditHobbies);
 const anotherEdditHobbies = hobbies.map((item) => ({text: item}));
 console.log(anotherEdditHobbies);
 
+// Destructuring
+const [firstName, lastName] = ['Max', 'Schwarz'];
+console.log(firstName, lastName);
+
+const {name: userName, age} = {
+  name: 'Max',
+  age: 30,
+};
+
+console.log(userName, age);
