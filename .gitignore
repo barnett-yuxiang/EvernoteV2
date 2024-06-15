@@ -27,3 +27,8 @@ Thumbs.db
 
 # dotenv files
 .env
+
+# Next.js build output
+dist
+dist-ssr
+*.local
