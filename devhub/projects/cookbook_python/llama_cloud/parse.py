@@ -7,14 +7,23 @@ from llama_parse import LlamaParse
 from llama_index.core import SimpleDirectoryReader
 
 # set up parser
+# =============
+# You can use OpenAI's GPT-4o to handle document extraction. This is more expensive than regular parsing
+# (10 credits per page instead of 1) but can get better results for some documents.
+# parser = LlamaParse(
+#   gpt4o_mode=True
+#   gpt4o_api_key=sk-proj-xxxxxx
+# )
 parser = LlamaParse(
-    result_type="markdown"  # "markdown" and "text" are available
+    result_type="markdown",  # "markdown" and "text" are available
+    verbose=True,
 )
 
 # use SimpleDirectoryReader to parse our file
 file_extractor = {".pdf": parser}
 documents = SimpleDirectoryReader(input_files=['llama_cloud/data/canada.pdf'], file_extractor=file_extractor).load_data()
 print(documents)
+print("\n\n")
 
 
 # one extra dep
