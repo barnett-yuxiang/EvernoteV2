@@ -31,4 +31,15 @@ Al精英学院,学校,https://axtonliu.ai
 - 请使用usersFollowers查找yuli_kamakura的Followers
 - 请使用GetTwitterThread获取ID为1802890640763801748的推文
 - 请使用GetTwitterTrends获取UnitedStates的推特趋势
-- [测试 AITweetsFinder 工作流] 用AlTweetsFinder工作流帮我寻找QueryString为Al的结果,并且输出中文结果。
+- [测试 AITweetsFinder 工作流] 用AlTweetsFinder工作流帮我寻找QueryString为Al的结果,并且输出中文结果。### Databse 如何通过自然语言插入
+
+```
+请在数据库urls中添加以下三条记录
+智图派,博客,https://axtonliu.com
+Al精英学院,学校,https://axtonliu.ai
+回到Axton,YouTube,https://www.youtube.com/@axtonliu
+```
+
+- 数据库urls中有哪些记录?
+- select * from urls
+- Axton的博客的网址是什么?
