@@ -23,3 +23,12 @@ Al精英学院,学校,https://axtonliu.ai
 - 数据库urls中有哪些记录?
 - select * from urls
 - Axton的博客的网址是什么?
+
+### WF：AFTweetsFinder
+
+- 请使用getUsers获取@yuli_kamakura的信息
+- 请使用searchTweet查找yuli_kamakura的与Al相关的推文,最多返回10条
+- 请使用usersFollowers查找yuli_kamakura的Followers
+- 请使用GetTwitterThread获取ID为1802890640763801748的推文
+- 请使用GetTwitterTrends获取UnitedStates的推特趋势
+- [测试 AITweetsFinder 工作流] 用AlTweetsFinder工作流帮我寻找QueryString为Al的结果,并且输出中文结果。
