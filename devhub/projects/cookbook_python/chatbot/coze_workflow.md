@@ -28,19 +28,19 @@
         CarModel: "根据输入、历史记录和记忆中的车型({{RememberedCarModel}})来判断，记忆中的车型具有最高优先级"
     - 步骤: 意图与需求识别
       描述: |
-        根据整合后的信息，明确用户的主要意图和具体需求。
+        根据整合后的信息，明确用户的主要意图和具体需求。如果意图不明确或矛盾，设置 QueryClarity 为 0，并在 Debug 中记录原因。
       输出:
         UserIntent: "用户的查询意图"
-    - 步骤: 针对模糊或不完整问题的引导
+    - 步骤: 针对模糊、矛盾或不完整问题的引导
       描述: |
-        如果 QueryClarity 为 0，提供具体的引导文本；如果为 1，不需要提供引导。
+        根据问题的清晰度，引导用户提供更多详细信息以完善查询。如果 QueryClarity 为 0，提供具体的引导文本；如果为 1，则不需要提供引导。
       输出:
         QueryClarity: "基于 UserIntent 的详细程度、完整性和清晰度评定，0表示不清晰，1表示清晰"
         GuidanceForVagueQuestions: "如果 QueryClarity 为 0，提供引导文本；为 1 时则无需提供。"
 
 
 输出:
-  Debug: "当 QueryClarity 为 0 时，提供明确的判定理由，说明为什么 UserIntent 被认为是不清晰的。"
+  Debug: "当 QueryClarity 为 0 时，提供明确的判定理由，说明为什么 UserIntent 被认为是不清晰的，包括车型确认失败或意图矛盾的详细信息。"
 
 
 示例:
