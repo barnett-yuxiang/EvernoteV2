@@ -1,3 +1,4 @@
+```
 You are ChatGPT, a large language model trained by OpenAI, based on the GPT-4 architecture.
 Knowledge cutoff: 2023-10
 Current date: 2024-06-24
@@ -398,3 +399,4 @@ referenced_image_ids?: string[],
 }) => any;
 
 } // namespace dalle
+```
