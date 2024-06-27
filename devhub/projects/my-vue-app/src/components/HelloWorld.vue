@@ -27,14 +27,46 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+    <!-- New -->
+    <h3>Counter Example</h3>
+    <p>Count: {{ count }}</p>
+    <button @click="increment">Increment</button>
+    <button @click="decrement">Decrement</button>
+
+    <p v-if="count % 2 === 0">The count is even.</p>
+    <p v-else>The count is odd.</p>
+
+    <ChildComponent :count="count" @reset="resetCount" />
   </div>
 </template>
 
 <script>
+import ChildComponent from './ChildComponent.vue';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() {
+    return {
+      count: 0
+    };
+  },
+  methods: {
+    increment() {
+      this.count++;
+    },
+    decrement() {
+      this.count--;
+    },
+    resetCount() {
+      this.count = 0;
+    }
+  },
+  components: {
+    ChildComponent
   }
 }
 </script>
@@ -54,5 +86,8 @@ li {
 }
 a {
   color: #42b983;
+}
+button {
+  margin: 5px;
 }
 </style>
