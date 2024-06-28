@@ -322,6 +322,11 @@
       </div>
     </div>
   </div>
+  <div style="text-align:center">
+    <h1>{{ title }}</h1>
+    <input [(ngModel)]="title" type="text" placeholder="Enter new title...">
+    <button (click)="updateTitle()">Update Title</button>
+  </div>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
