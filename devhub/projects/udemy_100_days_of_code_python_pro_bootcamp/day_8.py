@@ -26,3 +26,8 @@ greet_with("Nowhere", "Jack Bauer")
 
 #Calling greet_with() with Keyword Arguments
 greet_with(location="London", name="Angela")
+
+# https://stackoverflow.com/questions/2356501/how-do-you-round-up-a-number
+import math
+print(math.ceil(4.2))
+print(math.floor(4.2))
