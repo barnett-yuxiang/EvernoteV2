@@ -1,11 +1,7 @@
-export default function TabButton({ label }) {
-  function handeClick() {
-    console.log(`You clicked on ${label}`);
-  }
-
+export default function TabButton({ onSelect, children }) {
   return (
     <li>
-      <button onClick={handeClick}>{label}</button>
+      <button onClick={onSelect}>{children}</button>
     </li>
   );
 }
