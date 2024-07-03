@@ -36,7 +36,7 @@ function App() {
           <h2>Time to get started!</h2>
           <ul>
             {CORE_CONCEPTS.map((conceptItem) => (
-              <CoreConcept key={conceptItem.title} {...concept} />
+              <CoreConcept key={conceptItem.title} {...conceptItem} />
             ))}
           </ul>
         </section>
