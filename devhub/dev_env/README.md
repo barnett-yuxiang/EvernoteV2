@@ -1,4 +1,29 @@
-# Mac
+
+## git 101
+
+gitconfig
+```
+[user]
+	name = <NAME>
+	email = <MAIL>
+[core]
+	editor = vim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	i = init
+	co = checkout
+```
+
+tools
+- Fork
+- tig
+
+
+## Mac
 
 `brew install git curl wget`
 
@@ -33,8 +58,8 @@ other useful terminal tools: `brew install gh eza bat procs ripgrep`
 - procs
 - ripgrep, https://github.com/BurntSushi/ripgrep
 
-# Linux
+## Linux
 
 
-# Windows
+## Windows
 
