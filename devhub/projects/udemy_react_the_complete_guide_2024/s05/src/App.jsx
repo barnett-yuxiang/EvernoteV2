@@ -21,11 +21,20 @@ function App() {
     });
   }
 
+  const inputisValid =
+    userInput.initialInvestment > 0 &&
+    userInput.annualInvestment > 0 &&
+    userInput.expectedReturn > 0 &&
+    userInput.duration > 0;
+
   return (
     <>
       <Header />;
       <UserInput userInput={userInput} onChange={handleChange} />;
-      <Results input={userInput} />;
+      {!inputisValid && (
+        <p className="center">Please enter a duration greater than zero.</p>
+      )}
+      {inputisValid && <Results input={userInput} />};
     </>
   );
 }
