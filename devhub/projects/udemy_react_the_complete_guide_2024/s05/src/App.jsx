@@ -12,6 +12,12 @@ function App() {
     duration: 10,
   });
 
+  const inputisValid =
+    userInput.initialInvestment > 0 &&
+    userInput.annualInvestment > 0 &&
+    userInput.expectedReturn > 0 &&
+    userInput.duration > 0;
+
   function handleChange(inputIdentifier, newValue) {
     setUserInput((prevState) => {
       return {
@@ -20,12 +26,6 @@ function App() {
       };
     });
   }
-
-  const inputisValid =
-    userInput.initialInvestment > 0 &&
-    userInput.annualInvestment > 0 &&
-    userInput.expectedReturn > 0 &&
-    userInput.duration > 0;
 
   return (
     <>
