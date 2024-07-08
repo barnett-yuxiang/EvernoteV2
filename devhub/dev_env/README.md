@@ -1,5 +1,21 @@
+## Mac Env Setup
 
-## git 101
+### Prerequisites
+
+VPN
+Clash X
+Clash Pro
+
+Xcode
+
+Homebrew
+`brew install git curl wget`
+
+font
+
+`git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
+
+### git
 
 gitconfig
 ```
@@ -18,18 +34,8 @@ gitconfig
 	co = checkout
 ```
 
-tools
-- Fork
-- tig
 
-
-## Mac
-
-`brew install git curl wget`
-
-font
-
-`git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git`
+### zsh and pk10 and plugins
 
 plugins
 
@@ -51,15 +57,64 @@ other useful terminal tools: `brew install gh eza bat procs ripgrep`
 
 
 - gh
-
-
 - eza
 - bat
 - procs
 - ripgrep, https://github.com/BurntSushi/ripgrep
 
-## Linux
+## Required Tools
+
+ToolBox
+
+Arc
+
+vscode
+
+git
+- Fork
+- tig
+- GitHub Destop
+
+Figma
+
+Warp.dev
+
+Adobe
+
+Slack
+
+discord
+
+Telegram
+
+Postman
+
+Zoom
+
+Readpaper
+
+Chrome Extension
+- 
 
 
-## Windows
+### Python Env
+
+poetry
+
+install: https://python-poetry.org/docs/main#installing-with-the-official-installer
+
+Use Poetry
+poetry --version
+
+Update Poetry
+poetry self update
+
+
+### Node Env
+
+
+
+### Go Env
+
+
 
