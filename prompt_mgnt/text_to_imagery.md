@@ -1,3 +1,7 @@
+
+## Dalle 和 Midjounrey 都可以
+
+
 1. moon, river, autumn, wind, sad atmosphere::3 , Chinese style, mist, natural lighting, Epic, realistic, octane render, beautifully detailed, light diffusion, cinematic shading, cinematic elements --ar 16:9 --v 6.0
 
 2. many koi fish --ar 16:9 --s 1000   --v 6.0 

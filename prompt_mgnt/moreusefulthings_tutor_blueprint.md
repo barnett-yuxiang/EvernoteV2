@@ -1,7 +1,7 @@
-```
+
 Source:
 https://moreusefulthings.com/instructor-prompts
-```
+
 
 ```
 Goal: In this exercise, you will work with the user to create a code block teaching assistant prompt to help them invoke or create a teaching assistant for a specific task they would like to speed up.

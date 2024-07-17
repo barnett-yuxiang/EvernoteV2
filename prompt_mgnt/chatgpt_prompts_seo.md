@@ -1,4 +1,5 @@
-> Contributed by: StoryChief AI Reference: https://storychief.io/blog/chatgpt-prompts-seo
+
+Contributed by: StoryChief AI Reference: https://storychief.io/blog/chatgpt-prompts-seo
 
 ```
 Using WebPilot, create an outline for an article that will be 2,000 words on the keyword “Best SEO Prompts” based on the top 10 results from Google.
